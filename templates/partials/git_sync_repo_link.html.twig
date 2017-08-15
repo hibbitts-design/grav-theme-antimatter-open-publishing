@@ -1,0 +1,61 @@
+{# new twig template file - hibbittsdesign.org #}
+{% if config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is not empty %}
+  {% if not page.header.hide_git_sync_repo_link %}
+    {% if not (theme_config.type_of_git_sync_repo_link == 'edit') or (theme_config.type_of_git_sync_repo_link == 'edit' and theme_config.git_sync_repo_link is not empty) %}
+      {% if theme_config.custom_git_sync_repo_link_icon is empty %}
+        {% set git_sync_repo_link = config.plugins['git-sync'].repository %}
+          {% if 'github' in git_sync_repo_link %}
+            {% set git_repo_link_icon = "github" %}
+          {% elseif 'gitlab' in git_sync_repo_link %}
+            {% set git_repo_link_icon = "gitlab" %}
+          {% elseif 'bitbucket' in git_sync_repo_link %}
+            {% set git_repo_link_icon = "bitbucket" %}
+          {% else %}
+            {% set git_repo_link_icon = "git" %}
+          {% endif %}
+      {% else %}
+        {% set git_repo_link_icon = theme_config.custom_git_sync_repo_link_icon %}
+      {% endif %}
+      {% if not (theme_config.type_of_git_sync_repo_link == 'edit') %}
+        {% set git_sync_repo = config.plugins['git-sync'].repository %}
+        {% set git_sync_repo_link = (git_sync_repo|replace({'.git':'/'})) %}
+        {% if theme_config.custom_git_sync_repo_link_text is empty %}
+          {% set git_repo_link_text = 'View Content Repository' %}
+        {% else %}
+          {% set git_repo_link_text = theme_config.custom_git_sync_repo_link_text %}
+        {% endif %}
+        <a href="{{ git_sync_repo_link }}" title="{{ config.site.gitrepo.editlinktext }}" target="_blank">
+        <i class="fa fa-{{ git_repo_link_icon }}" aria-hidden="true"></i>
+        {{ git_repo_link_text }}</a>
+      {% else %}
+        {% if page.header.git_sync_repo_link %}
+          {% set git_sync_repo_link = page.header.git_sync_repo_link %}
+        {% else %}
+          {% set git_sync_repo_link = theme_config.git_sync_repo_link ~  ('/'~page.filePathClean)|replace({'/user/':'/'}) %}
+        {% endif %}
+        {% if theme_config.custom_git_sync_repo_link_text is empty %}
+          {% set git_repo_link_text = 'Edit this Page' %}
+        {% else %}
+          {% set git_repo_link_text = theme_config.custom_git_sync_repo_link_text %}
+        {% endif %}
+        <a href="{{ git_sync_repo_link }}" title="{{ config.site.gitrepo.editlinktext }}" target="_blank">
+        <i class="fa fa-{{ git_repo_link_icon }}" aria-hidden="true"></i>
+        {{ git_repo_link_text }}</a>
+      {% endif %}
+    {% else %}
+  	{% set admin_panel_appearance_url = grav.base_url ~ '/admin/themes/antimatter-git-sync' %}
+      <a href="{{ admin_panel_appearance_url }}" title="Setup Git Repository Tree URL">
+      <i class="fa fa-cog" aria-hidden="true"></i> Setup Git Repository Tree URL</a>
+    {% endif %}
+  {% endif %}
+{% else %}
+  {% if not config.plugins['git-sync'].enabled  %}
+    {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/' %}
+    <a href="{{ admin_panel_appearance_url }}" title="Add/Setup Git Sync Plugin">
+    <i class="fa fa-cog" aria-hidden="true"></i> Add/Setup Git Sync Plugin</a>
+  {% else %}
+    {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/git-sync' %}
+    <a href="{{ admin_panel_appearance_url }}" title="Setup Git Sync Plugin">
+    <i class="fa fa-cog" aria-hidden="true"></i> Setup Git Sync Plugin</a>
+  {% endif %}
+{% endif %}
