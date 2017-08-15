@@ -4,5 +4,5 @@ streams:
      type: ReadOnlyStream
      prefixes:
        '':
-       - user/themes/antimatter-open-pub
+       - user/themes/antimatter-open-publishing
        - user/themes/antimatter
