@@ -1,11 +1,16 @@
 name: Open Publishing Antimatter
 version: 0.9.0
-description: "Extending Antimatter"
-icon: crosshairs
+description: "A customized version of the Antimatter theme with Git Sync and 'chomeless' mode support."
+icon: globe
 author:
  name: Paul Hibbitts
  email: paul@hibbittsdesign.org
  url: http://hibbittsdesign.org
+homepage: https://github.com/hibbitts-design/grav-theme-open-publishing-antimatter
+demo: http://demo.hibbittsdesign.org/grav-skeleton-open-publishing-site/
+keywords: open, publishing, gitsync, chromeless
+bugs: https://github.com/hibbitts-design/grav-theme-open-publishing-antimatter/issues
+license: MIT
 
 dependencies:
   - admin
