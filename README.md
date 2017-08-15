@@ -1,24 +1,24 @@
-# Open Publishing Antimatter Inherited Theme
+# Antimatter Open Publishing Inherited Theme
 
-![Open Publishing Antimatter](screenshot.jpg)
+![ Antimatter Open Publishing](screenshot.jpg)
 
-Open Publishing Antimatter is a customized version of the default [Grav](http://getgrav.org) theme. In addition for built-in support for the Git Sync Plugin, a ['Chromeless' mode](http://demo.hibbittsdesign.org/grav-skeleton-open-publishing-chromeless-site/) (shown above) is available to better embed Grav content into other systems.
+Antimatter Open Publishing is a customized version of the default [Grav](http://getgrav.org) theme. In addition for built-in support for the Git Sync Plugin, a ['Chromeless' mode](http://demo.hibbittsdesign.org/grav-skeleton-open-publishing-chromeless-site/) (shown above) is available to better embed Grav content into other systems.
 
 ## Manual Installation
 
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `open-pub-antimatter`.
+To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `antimatter-open-pub`.
 
 You should now have all the theme files under
 
-    /your/site/grav/user/themes/open-pub-antimatter
+    /your/site/grav/user/themes/antimatter-open-pub
 
 ## Manual Update
 
-Manually updating Open Publishing Antimatter is pretty simple. Here is what you will need to do to get this done:
+Manually updating Antimatter Open Publishing is pretty simple. Here is what you will need to do to get this done:
 
-* Delete the `your/site/user/themes/open-pub-antimatter` directory.
-* Download the new version of the Open Publishing Antimatter theme.
-* Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `open-pub-antimatter`.
+* Delete the `your/site/user/themes/antimatter-open-pub` directory.
+* Download the new version of the Antimatter Open Publishing theme.
+* Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `antimatter-open-pub`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
 > Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/themes`) will remain intact.
@@ -85,7 +85,7 @@ icon: bar-chart-o
 
 ##### Daring Fireball Link Pages
 
-Open Publishing Antimatter supports the ability for a page to have a `link:` header option.  This will then in turn create a **link page** where the title of the page will actually be linked to the link provided and a prefexid double angle `>>` will link to the page itself.  Simply provide the link in the page header:
+Antimatter Open Publishing supports the ability for a page to have a `link:` header option.  This will then in turn create a **link page** where the title of the page will actually be linked to the link provided and a prefexid double angle `>>` will link to the page itself.  Simply provide the link in the page header:
 
 ```
 link: http://getgrav.org/blog
@@ -102,12 +102,12 @@ git_sync_repo_link: https://github.com/hibbitts-design/grav-skeleton-course-hub/
 
 🚨Before setting up Git Sync, please make sure to remove the `ReadMe.md` file in your Grav site `user` folder (if one exists). This will prevent a possible sync issue when creating a default `ReadMe.md` file in your new Git repository.🚨
 
-If you want to set Open Publishing Antimatter as the default theme, you can do so by following these steps:
+If you want to set Antimatter Open Publishing as the default theme, you can do so by following these steps:
 
 * Navigate to `/your/site/grav/user/config`.
 * Open the **system.yaml** file.
-* Change the `theme:` setting to `theme: open-pub-antimatter`.
+* Change the `theme:` setting to `theme: antimatter-open-pub`.
 * Save your changes.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
 
-Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **open publishing antimatter** folder.
+Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **antimatter open pub** folder.
