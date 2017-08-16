@@ -1,0 +1,5 @@
+git:
+    antimatter:
+        url: https://github.com/getgrav/grav-theme-antimatter
+        path: user/themes/antimatter
+        branch: master

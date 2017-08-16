@@ -1,3 +1,9 @@
+# v0.9.3
+## XX/XX/XXXX
+
+1. [](#improved)
+    * Updated theme dependencies.
+
 # v0.9.2
 ## 08/16/2017
 

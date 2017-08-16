@@ -1,5 +1,5 @@
 name: Antimatter Open Publishing
-version: 0.9.2
+version: 0.9.3
 description: "A customized version of the Antimatter theme with Git Sync and 'chromeless' mode (as shown in screenshot)."
 icon: unlock
 author:
@@ -15,10 +15,23 @@ license: MIT
 
 dependencies:
   - admin
+  - archives
   - email
+  - external_links
+  - feed
   - form
   - git-sync
   - login
+  - markdown-fontawesome
+  - markdown-notices
+  - page-inject
+  - pagination
+  - relatedpages
+  - simplesearch
+  - taxonomylist
+  - youtube
+  - shortcode-core
+  - shortcode-ui
   - antimatter
 
 form:
