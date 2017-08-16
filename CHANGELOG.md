@@ -1,3 +1,9 @@
+# v0.9.2
+## 08/16/2017
+
+1. [](#improved)
+    * Revised theme description.
+
 # v0.9.1
 ## 08/16/2017
 
