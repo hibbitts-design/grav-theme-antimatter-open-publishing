@@ -6,19 +6,19 @@ Antimatter Open Publishing is a customized version of the default [Grav](http://
 
 ## Manual Installation
 
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `antimatter-open-pub`.
+To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `antimatter-open-publishing`.
 
 You should now have all the theme files under
 
-    /your/site/grav/user/themes/antimatter-open-pub
+    /your/site/grav/user/themes/antimatter-open-publishing
 
 ## Manual Update
 
 Manually updating Antimatter Open Publishing is pretty simple. Here is what you will need to do to get this done:
 
-* Delete the `your/site/user/themes/antimatter-open-pub` directory.
+* Delete the `your/site/user/themes/antimatter-open-publishing` directory.
 * Download the new version of the Antimatter Open Publishing theme.
-* Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `antimatter-open-pub`.
+* Unzip the zip file in `your/site/user/themes` and rename the resulting folder to `antimatter-open-publishing`.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in terminal and typing `bin/grav clear-cache`.
 
 > Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/themes`) will remain intact.
@@ -106,8 +106,8 @@ If you want to set Antimatter Open Publishing as the default theme, you can do s
 
 * Navigate to `/your/site/grav/user/config`.
 * Open the **system.yaml** file.
-* Change the `theme:` setting to `theme: antimatter-open-pub`.
+* Change the `theme:` setting to `theme: antimatter-open-publishing`.
 * Save your changes.
 * Clear the Grav cache. The simplest way to do this is by going to the root Grav directory in Terminal and typing `bin/grav clear-cache`.
 
-Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **antimatter open pub** folder.
+Once this is done, you should be able to see the new theme on the frontend. Keep in mind any customizations made to the previous theme will not be reflected as all of the theme and templating information is now being pulled from the **antimatter open publishing** folder.
