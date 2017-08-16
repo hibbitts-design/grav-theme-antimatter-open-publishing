@@ -3,7 +3,7 @@ namespace Grav\Theme;
 
 use Grav\Common\Theme;
 
-class myTheme extends Antimatter
+class AntimatterOpenPublishing extends Antimatter
 {
 }
 ?>
