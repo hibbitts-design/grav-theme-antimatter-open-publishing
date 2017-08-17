@@ -29,6 +29,7 @@ dependencies:
   - relatedpages
   - simplesearch
   - taxonomylist
+  - tntsearch
   - youtube
   - shortcode-core
   - shortcode-ui
