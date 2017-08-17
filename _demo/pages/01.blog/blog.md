@@ -17,8 +17,7 @@ feed:
     description: 'Sample Blog Description'
     limit: 10
 pagination: true
-git_sync_repo_link: https://github.com/paulhibbitts/test-git-sync/tree/master/pages/01.blog
 ---
 
-# My Gravtastic Blog
-## A tale of **awesomazing** adventures
+# My Open Publishing Space
+## Publish, share and collaboratively edit Markdown-based content
