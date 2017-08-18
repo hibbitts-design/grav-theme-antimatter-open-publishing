@@ -36,7 +36,8 @@
             {% else %}
                 {% set header_image_media = page.media.images|first %}
             {% endif %}
-            {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
+            {# changed image display method to support ALT image tag - hibbittsdesign.org #}
+            <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ page.header.alt_text }}" />
         {% endif %}
 
     </div>

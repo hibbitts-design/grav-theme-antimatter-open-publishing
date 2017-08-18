@@ -1,0 +1,18 @@
+.hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+p a:hover:not(.button) {
+    color: #0e6e90;
+    text-decoration: underline;
+}
+
+p a:focus:not(.button) {
+    color: #0e6e90;
+    text-decoration: underline;
+}
