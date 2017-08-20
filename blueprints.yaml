@@ -142,12 +142,12 @@ form:
 
     displaypostsummary:
         type: section
-        title: Blog Page Summaries
+        title: Blog Post Summaries
         underline: true
 
     displaypostsummary.enabled:
         type:                      toggle
-        label:                     Hide Blog Page Summaries
+        label:                     Hide Summaries on Content Pages
         highlight:                 1
         default:                   0
         options:
