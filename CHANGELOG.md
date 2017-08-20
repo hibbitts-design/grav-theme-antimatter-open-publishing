@@ -7,6 +7,7 @@
     * Increased support for 'chromeless' display mode for Blogs
     * Revised order of Previous/Next buttons
     * Added a visual fill effect for buttons upon focus and hover
+    * Added hidden label for SimpleSearch Plugin search field
 
 # v0.9.4
 ## 08/18/2017
