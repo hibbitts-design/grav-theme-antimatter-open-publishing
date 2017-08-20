@@ -91,6 +91,9 @@ Antimatter Open Publishing supports the ability for a page to have a `link:` hea
 link: http://getgrav.org/blog
 ```
 
+### Theme Options
+![ Antimatter Open Publishing Theme Options](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/e727857cf267ea4aa9910ba6db12a0a67444f584/antimatter-open-publishing-theme-options.png)
+
 ### Page Header Options
 All pages support the following additional options:
 ```
