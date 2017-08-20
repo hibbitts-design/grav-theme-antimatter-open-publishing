@@ -147,7 +147,7 @@ form:
 
     displaypostsummary.enabled:
         type:                      toggle
-        label:                     Hide Summaries on Content Pages
+        label:                     Hide Summaries on Blog Post Pages
         highlight:                 1
         default:                   0
         options:
