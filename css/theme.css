@@ -7,22 +7,23 @@
     overflow:hidden;
 }
 
-p a:hover:not(.button) {
+p a:hover:not(.button), a:focus:not(.button) {
     color: #0e6e90;
     text-decoration: underline;
 }
 
-p a:focus:not(.button) {
+.tags a:hover, a:focus {
+    background: #1BB3E9;
+    color: #FFFFFF;
+}
+
+.pagination a:hover, a:focus {
+    background: #1BB3E9;
+    color: #FFFFFF;
+}
+
+.archives .archive_date a:hover {
+    background: #1BB3E9;
     color: #0e6e90;
     text-decoration: underline;
-}
-
-.tags a:hover {
-    background: #1BB3E9;
-    color: #FFFFFF;
-}
-
-.pagination a:hover {
-    background: #1BB3E9;
-    color: #FFFFFF;
 }
