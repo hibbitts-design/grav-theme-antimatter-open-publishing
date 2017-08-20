@@ -106,55 +106,6 @@ form:
         validate:
             type: URL
 
-    custommenuoptions:
-        type:                              section
-        title:                             Menubar
-        underline:                         true
-
-    displaycustommenus.enabled:
-        type:                      toggle
-        label:                     Display Custom Menu Items
-        help:                      Determines if any defined custom menu entries are displayed in the menubar.
-        default:                   0
-        highlight:                 1
-        options:
-            1:                     Yes
-            0:                     No
-        validate:
-            type:                  bool
-
-    menu:
-        name:                      menu
-        type:                      list
-        label:                     Custom Menubar Items
-        fields:
-          .text:
-            type:                  text
-            label:                 Text
-            description:           'Text label for menu item.'
-          .icon:
-            type:                  text
-            label:                 Icon
-            description:           'Font Awesome icon for menu item.'
-          .url:
-            type:                  text
-            label:                 URL
-            description:           'URL for menu item.'
-
-
-    hidehomemenulink:
-        type:                      toggle
-        label:                     Include Homepage Link in Menubar
-        help:                      Determines if the link to the Homepage is included in the menubar.
-        default:                   0
-        highlight:                 0
-        options:
-            0:                     Yes
-            1:                     No
-        validate:
-            type:                  bool
-
-
     displaypostsummary:
         type: section
         title: Blog Post Summaries
@@ -209,3 +160,50 @@ form:
                 label:                     Additional CC License Text
                 validate:
                     type:                  text
+
+    menubaroptions:
+        type:                              section
+        title:                             Menubar
+        underline:                         true
+
+    displaycustommenus.enabled:
+        type:                      toggle
+        label:                     Display Custom Menu Items
+        help:                      Determines if any defined custom menu entries are displayed in the menubar.
+        default:                   0
+        highlight:                 1
+        options:
+            1:                     Yes
+            0:                     No
+        validate:
+            type:                  bool
+
+    menu:
+        name:                      menu
+        type:                      list
+        label:                     Custom Menubar Items
+        fields:
+          .text:
+            type:                  text
+            label:                 Text
+            description:           'Text label for menu item.'
+          .icon:
+            type:                  text
+            label:                 Icon
+            description:           'Font Awesome icon for menu item.'
+          .url:
+            type:                  text
+            label:                 URL
+            description:           'URL for menu item.'
+
+    hidehomemenulink:
+        type:                      toggle
+        label:                     Include Homepage Link in Menubar
+        help:                      Determines if the link to the Homepage is included in the menubar.
+        default:                   0
+        highlight:                 0
+        options:
+            0:                     Yes
+            1:                     No
+        validate:
+            type:                  bool
