@@ -1,30 +1,33 @@
 {% macro loop(page) %}
   {% for p in page.children.visible %}
-    {% set current_page = (p.active or p.activeChild)
-      ? 'active'
-      : '' %}
-    {% if p.children.visible.count > 0 %}
-      <li class="has-children {{ current_page }}">
+    {# Supress home menu link - hibbittsdesign.org #}
+    {% if not((theme_config.hidehomemenulink) and (p.slug in config.system.home.alias)) %}
+      {% set current_page = (p.active or p.activeChild)
+        ? 'active'
+        : '' %}
+      {% if p.children.visible.count > 0 %}
+        <li class="has-children {{ current_page }}">
+          <a href="{{ p.url }}">
+            {% if p.header.icon %}
+              <i class="fa fa-{{ p.header.icon }}"></i>
+            {% endif %}
+            {{ p.menu }}
+            <span></span>
+          </a>
+          <ul>
+            {{ _self.loop(p) }}
+        </ul>
+      </li>
+    {% else %}
+      <li class="{{ current_page }}">
         <a href="{{ p.url }}">
           {% if p.header.icon %}
             <i class="fa fa-{{ p.header.icon }}"></i>
           {% endif %}
           {{ p.menu }}
-          <span></span>
         </a>
-        <ul>
-          {{ _self.loop(p) }}
-      </ul>
-    </li>
-  {% else %}
-    <li class="{{ current_page }}">
-      <a href="{{ p.url }}">
-        {% if p.header.icon %}
-          <i class="fa fa-{{ p.header.icon }}"></i>
-        {% endif %}
-        {{ p.menu }}
-      </a>
-    </li>
+      </li>
+    {% endif %}
   {% endif %}
 {% endfor %}
 {% endmacro %}
@@ -34,17 +37,20 @@
   {{ _self.loop(pages) }}
 {% else %}
   {% for page in pages.children.visible %}
-    {% set current_page = (page.active or page.activeChild)
-      ? 'active'
-      : '' %}
-    <li class="{{ current_page }}">
-      <a href="{{ page.url }}">
-        {% if page.header.icon %}
-          <i class="fa fa-{{ page.header.icon }}"></i>
-        {% endif %}
-        {{ page.menu }}
-      </a>
-    </li>
+    {# Supress home menu link - hibbittsdesign.org #}
+    {% if not((theme_config.hidehomemenulink) and (page.slug in config.system.home.alias)) %}
+      {% set current_page = (page.active or page.activeChild)
+        ? 'active'
+        : '' %}
+      <li class="{{ current_page }}">
+        <a href="{{ page.url }}">
+          {% if page.header.icon %}
+            <i class="fa fa-{{ page.header.icon }}"></i>
+          {% endif %}
+          {{ page.menu }}
+        </a>
+      </li>
+    {% endif %}
   {% endfor %}
 {% endif %}
 {# custom menu items check and display - hibbittsdesign.org #}

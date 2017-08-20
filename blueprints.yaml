@@ -108,7 +108,7 @@ form:
 
     custommenuoptions:
         type:                              section
-        title:                             Custom Menubar
+        title:                             Menubar
         underline:                         true
 
     displaycustommenus.enabled:
@@ -140,6 +140,20 @@ form:
             type:                  text
             label:                 URL
             description:           'URL for menu item.'
+
+
+    hidehomemenulink:
+        type:                      toggle
+        label:                     Include Homepage Link in Menubar
+        help:                      Determines if the link to the Homepage is included in the menubar.
+        default:                   0
+        highlight:                 0
+        options:
+            0:                     Yes
+            1:                     No
+        validate:
+            type:                  bool
+
 
     displaypostsummary:
         type: section
