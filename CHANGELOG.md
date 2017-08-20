@@ -6,6 +6,7 @@
     * Removed unexpected multi-page duplication of 'Featured' posts
     * Increased support for 'chromeless' display mode for Blogs
     * Revised order of Previous/Next buttons
+    * Added a visual fill effect for buttons upon focus and hover
 
 # v0.9.4
 ## 08/18/2017
