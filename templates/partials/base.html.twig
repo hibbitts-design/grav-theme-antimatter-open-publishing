@@ -52,7 +52,7 @@
           <div class="totop">
             <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
           </div>
-          {# check to display git sync link in footer or not yet defined by saving theme settings - hibbittsdesign.org #} {% if theme_config.display_of_git_sync_repo_link == 'footer' or theme_config.display_of_git_sync_repo_link == empty %}
+          {# check to display git sync link in footer or not yet defined by saving theme settings - hibbittsdesign.org #} {% if theme_config.display_of_git_sync_repo_link == 'footer' %}
           <p>{% include 'partials/git_sync_repo_link.html.twig' %}</p>
           {% endif %}
           <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.

@@ -66,7 +66,7 @@ form:
         size: medium
         classes: fancy
         label: Display Git Sync Link
-        default: footer
+        default: menu
         options:
             menu: Menu
             page: Page

@@ -67,7 +67,7 @@
   {% endfor %}
 {% endif %}
 {# check to display git sync link in menu - hibbittsdesign.org #}
-{% if theme_config.display_of_git_sync_repo_link == 'menu' %}
+{% if theme_config.display_of_git_sync_repo_link == 'menu' or theme_config.display_of_git_sync_repo_link == empty %}
   <li>{% include 'partials/git_sync_repo_link.html.twig' %}</li>
 {% endif %}
 {% if config.plugins.login.enabled and grav.user.username %}
