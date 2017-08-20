@@ -17,6 +17,10 @@
     'theme://js/slidebars.min.js') %} {% endblock %} {{ assets.js() }} {% endblock head %} </head>
 
     <body id="top" class="{{ page.header.body_classes }}">
+
+      {# added hidden page title for screen readers - hibbittsdesign.org #}
+      <h1 class="hidden">{{page.title}}</h1>
+
       <div id="sb-site">
 
         {# check content display flag - hibbittsdesign.org #} {% if not (grav.uri.param('chromeless')) and (not theme_config.chromeless.enabled) %} {% block header %}
@@ -31,8 +35,7 @@
         </header>
         {% endblock %} {% block showcase %}{% endblock %} {% else %}
         <div style="margin-bottom: -130px;"></div>
-        {% endif %} {% block body %} {# added hidden page title for screen readers - hibbittsdesign.org #}
-        <h1 class="hidden">{{page.title}}</h1>
+        {% endif %} {% block body %}
         <section id="body" class="{{ class }}">
           {% block content %} {% endblock %} {# check to display CC License - hibbittsdesign.org #} {# check to display git sync link in page - hibbittsdesign.org #} {% if theme_config.display_of_git_sync_repo_link == 'page' %}
           <div class="content-wrapper">
