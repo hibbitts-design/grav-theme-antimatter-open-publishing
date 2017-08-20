@@ -7,17 +7,17 @@
     overflow:hidden;
 }
 
-p a:hover:not(.button), a:focus:not(.button) {
+p a:hover:not(.button):not(.navigation li), a:focus:not(.button):not(.navigation li) {
     color: #0e6e90;
     text-decoration: underline;
 }
 
-.tags a:hover, a:focus {
+.tags a:hover:not(.navigation li), a:focus:not(.navigation li) {
     background: #1BB3E9;
     color: #FFFFFF;
 }
 
-.pagination a:hover, a:focus {
+.pagination a:hover:not(.navigation li), a:focus:not(.navigation li) {
     background: #1BB3E9;
     color: #FFFFFF;
 }
