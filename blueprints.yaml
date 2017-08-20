@@ -16,6 +16,7 @@ license: MIT
 dependencies:
   - admin
   - archives
+  - breadcrumbs
   - email
   - external_links
   - feed
