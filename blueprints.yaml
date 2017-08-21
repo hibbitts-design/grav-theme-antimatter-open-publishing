@@ -69,7 +69,7 @@ form:
         default: menu
         options:
             menu: Menu
-            page: Page
+            page: Page (visible in 'Chromeless' mode)
             footer: Footer
             none: None
 
