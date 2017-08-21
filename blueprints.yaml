@@ -195,6 +195,16 @@ form:
             type:                  text
             label:                 URL
             description:           'URL for menu item.'
+          .target:
+            type:                  select
+            label:                 Target
+            default:               _self
+            size:                  medium
+            options:
+                _blank:              'Open in a new window'
+                _parent:             'Open in the parent frame'
+                _top:                'Open in the full body of the window'
+                _self:               'Open in the same frame as clicked'
 
     hidehomemenulink:
         type:                      toggle

@@ -57,7 +57,7 @@
 {% if theme_config.displaycustommenus.enabled %}
   {% for mitem in theme_config.menu %}
     <li>
-      <a href="{{ mitem.url }}">
+      <a href="{{ mitem.url }}" target="{{ mitem.target }}">
         {% if mitem.icon %}
           <i class="fa fa-{{ mitem.icon }}"></i>
         {% endif %}
