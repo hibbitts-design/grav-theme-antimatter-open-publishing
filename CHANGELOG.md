@@ -3,12 +3,16 @@
 
 1. [](#improved)
     * Included demo pages updated
-    * Removed unexpected multi-page duplication of 'Featured' posts
     * Increased support for 'chromeless' display mode for embedded blogs
-    * Revised order of Previous/Next buttons
+    * Revised display order of Previous/Next buttons
     * Added a visual fill effect for buttons upon hover
     * Added hidden label for SimpleSearch Plugin search field
+    * Added option to hide homepage link in menubar
+    * Changed default display of Git Sync link to 'Menu'
     * Added option to choose window target for custom menu items
+    * Added note about 'Page' Git Sync link location for chromeless display
+1. [](#bugfix)
+    * Removed unexpected multi-page duplication of 'Featured' posts
 
 # v0.9.4
 ## 08/18/2017
