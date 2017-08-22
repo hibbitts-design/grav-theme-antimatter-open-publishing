@@ -1,13 +1,14 @@
 # v0.9.5
-## XX/XX/XXXX
+## 08/22/2017
 
 1. [](#improved)
-    * Include demo pages updated
+    * Included demo pages updated
     * Removed unexpected multi-page duplication of 'Featured' posts
-    * Increased support for 'chromeless' display mode for Blogs
+    * Increased support for 'chromeless' display mode for embedded blogs
     * Revised order of Previous/Next buttons
-    * Added a visual fill effect for buttons upon focus and hover
+    * Added a visual fill effect for buttons upon hover
     * Added hidden label for SimpleSearch Plugin search field
+    * Added option to choose window target for custom menu items
 
 # v0.9.4
 ## 08/18/2017
