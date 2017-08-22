@@ -23,6 +23,19 @@ Manually updating Antimatter Open Publishing is pretty simple. Here is what you 
 
 > Note: Any changes you have made to any of the files listed under this directory will also be removed and replaced by the new set. Any files located elsewhere (for example a YAML settings file placed in `user/config/themes`) will remain intact.
 
+## Open Publishing Features
+
+* Integrated support for Git Sync (i.e. view/edit pages in GitHub)
+* 'Chromeless' page display (i.e. only display page content) for embedding pages in a 3rd party system
+* Markdown-based sidebar widget
+* Featured posts (i.e. sticky posts)
+* Custom menubar items
+* Option to toggle page summaries (i.e. summaries are not displayed with page content)
+* Easy-to-use interface to create custom menubar items
+* Option to hide Home page link in menubar
+* Creative Commons license display
+* Various Web accessibility enhancements (i.e. hidden H1 page titles)
+
 ## Standard Antimatter Features
 
 * Lightweight and minimal for optimal performance
@@ -31,16 +44,6 @@ Manually updating Antimatter Open Publishing is pretty simple. Here is what you 
 * Built-in support for on-page navigation
 * Multiple page template types
 * Fontawesome icon support
-
-## Additional Open Publishing Features
-
-* 'Chromeless' page display (i.e. only display page content)
-* Integrated support for Git Sync (i.e. view/edit pages in GitHub)
-* Markdown sidebar
-* Featured posts (i.e. sticky posts)
-* Custom menu items
-* Option to toggle page summaries (i.e. summaries are not displayed with page content)
-* Creative Commons license
 
 ### Supported Page Templates
 
