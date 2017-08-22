@@ -1,6 +1,6 @@
-# Antimatter Open Publishing Inherited Theme
+# Antimatter Open Publishing Theme
 
-![ Antimatter Open Publishing](screenshot.jpg)
+![ Antimatter Open Publishing Theme](screenshot.jpg)
 
 Antimatter Open Publishing is a customized version of the default [Grav](http://getgrav.org) theme. In addition for built-in support for the Git Sync Plugin, a ['Chromeless' mode](http://demo.hibbittsdesign.org/grav-skeleton-open-publishing-chromeless-site/) (shown above) is available to better embed Grav content into other systems.
 
@@ -92,7 +92,7 @@ link: http://getgrav.org/blog
 ```
 
 ### Theme Options
-![ Antimatter Open Publishing Theme Options](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/e727857cf267ea4aa9910ba6db12a0a67444f584/antimatter-open-publishing-theme-options.png)
+![ Antimatter Open Publishing Theme Options](https://github.com/paulhibbitts/github-repo-images/blob/master/antimatter-open-publishing-theme-options.png.png?raw=true)
 
 ### Page Header Options
 All pages support the following additional options:
