@@ -1,8 +1,8 @@
 # v0.9.6
-## XX/XX/XXXX
+## 08/23/2017
 
-1. [](#improved)
-    * 
+1. [](#bugfix)
+    * Corrected theme settings calculation during Git Repository Tree URL setup
 
 # v0.9.5
 ## 08/22/2017
