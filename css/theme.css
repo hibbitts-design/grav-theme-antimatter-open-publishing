@@ -26,4 +26,4 @@ div#breadcrumbs {
   padding-left: 0; }
   @media only all and (max-width: 47.938em) {
     div#breadcrumbs {
-      display: unset; } }
+      display: block; } }
