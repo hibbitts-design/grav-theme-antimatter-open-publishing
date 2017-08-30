@@ -21,3 +21,9 @@ p a:hover:not(.button) {
     background: #1BB3E9;
     color: #FFFFFF;
 }
+
+div#breadcrumbs {
+  padding-left: 0; }
+  @media only all and (max-width: 47.938em) {
+    div#breadcrumbs {
+      display: unset; } }
