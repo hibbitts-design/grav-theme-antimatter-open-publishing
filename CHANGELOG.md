@@ -1,6 +1,8 @@
 # v0.9.7
 ## 08/30/2017
 
+1. [](#new)
+    * Added OER Schema plugin as theme dependency
 1. [](#improved)
     * Breadcrumbs now remain visible on all screen sizes
 

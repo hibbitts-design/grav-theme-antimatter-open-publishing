@@ -25,6 +25,7 @@ dependencies:
   - login
   - markdown-fontawesome
   - markdown-notices
+  - oerschema
   - page-inject
   - pagination
   - relatedpages
