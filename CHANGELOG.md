@@ -1,3 +1,9 @@
+# v0.9.7
+## 08/30/2017
+
+1. [](#improved)
+    * Breadcrumbs now remain visible on all screen sizes
+
 # v0.9.6
 ## 08/23/2017
 
