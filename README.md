@@ -4,6 +4,8 @@
 
 Antimatter Open Publishing is a customized version of the default [Grav](http://getgrav.org) theme. In addition for built-in support for the Git Sync Plugin, a ['Chromeless' mode](http://demo.hibbittsdesign.org/grav-skeleton-open-publishing-chromeless-site/) (shown above) is available to better embed Grav content into other systems.
 
+> Detailed documentation for this project is now available at http://learn.hibbittsdesign.org/openpublishingspace  
+
 ## Manual Installation
 
 To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `antimatter-open-publishing`.
