@@ -3,6 +3,7 @@
 
 1. [](#new)
     * Added OER Schema plugin as theme dependency
+    * Added TNTSearch plugin as skeleton dependency
 1. [](#improved)
     * Breadcrumbs now remain visible on all screen sizes
 
