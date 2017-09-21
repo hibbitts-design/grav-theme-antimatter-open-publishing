@@ -1,3 +1,9 @@
+# v0.9.9
+## 10/01/2017
+
+1. [](#bugfix)
+    * Corrected Twig logic checks for handling of non Git Sync Plugin Git syncing choice
+
 # v0.9.8
 ## 10/01/2017
 
