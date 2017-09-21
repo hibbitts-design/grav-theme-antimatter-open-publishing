@@ -1,5 +1,5 @@
 name: Antimatter Open Publishing
-version: 0.9.7
+version: 0.9.8
 description: "A customized version of the Antimatter theme with Git Sync and 'chromeless' mode (as shown in screenshot)."
 icon: unlock
 author:
@@ -66,7 +66,7 @@ form:
         type: select
         size: medium
         classes: fancy
-        label: Display Git Sync Link
+        label: Display of Git Sync Link
         default: menu
         options:
             menu: Menu
@@ -80,8 +80,17 @@ form:
         label: Type of Git Sync Link
         default: view
         options:
-            edit: View/Edit Page in Git Repostory
             view: View Git Repository
+            edit: View/Edit Page in Git Repository
+
+    method_for_git_sync:
+        type: select
+        size: medium
+        label: Method for Git Sync
+        default: 1
+        options:
+            gitsyncplugin: Git Sync Plugin
+            other: Other (e.g. cPanel Git Feature, etc.)
 
     custom_git_sync_repo_link_icon:
         type: input.text

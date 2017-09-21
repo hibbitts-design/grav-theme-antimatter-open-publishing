@@ -22,33 +22,15 @@
         <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
       </h4>
     {% else %}
-      {# check content display flag - hibbittsdesign.org #}
-      {% if not(grav.uri.param('chromeless')) %}
-        <h4 class="p-name">
-          <a href="{{ page.url }}" class="u-url">{{ page.title }}</a>
-        </h4>
-      {% else %}
-        <h4 class="p-name">
-          <a href="{{ page.url }}/chromeless:true" class="u-url">{{ page.title }}</a>
-        </h4>
-      {% endif %}
+        <h4 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
     {% endif %}
 
     {% if page.taxonomy.tag %}
-      <span class="tags">
-
-        {# check content display flag - hibbittsdesign.org #}
-        {% if not(grav.uri.param('chromeless')) %}
-          {% for tag in page.taxonomy.tag %}
-            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
-          {% endfor %}
-        {% else %}
-          {% for tag in page.taxonomy.tag %}
-            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}/chromeless:true" class="p-category">{{ tag }}</a>
-          {% endfor %}
-        {% endif %}
-
-      </span>
+    <span class="tags">
+        {% for tag in page.taxonomy.tag %}
+        <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+        {% endfor %}
+    </span>
     {% endif %}
     {% if header_image %}
       {% if header_image_file %}
@@ -73,32 +55,14 @@
       {% endif %}
     {% elseif truncate and page.summary != page.content %}
       <div class="p-summary e-content">
-        {{ page.summary }}
-        {# check content display flag - hibbittsdesign.org #}
-        {% if not(grav.uri.param('chromeless')) %}
-          <p>
-            <a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-          </p>
-        {% else %}
-          <p>
-            <a href="{{ page.url }}/chromeless:true">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-          </p>
-        {% endif %}
+          {{ page.summary }}
+          <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
       </div>
-    {% elseif truncate %}
-      <div class="p-summary e-content">
-        {{ page.content }}
-        {# check content display flag - hibbittsdesign.org #}
-        {% if not(grav.uri.param('chromeless')) %}
-          <p>
-            <a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-          </p>
-        {% else %}
-          <p>
-            <a href="{{ page.url }}/chromeless:true">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-          </p>
-        {% endif %}
-      </div>
+      {% elseif truncate %}
+        <div class="p-summary e-content">
+            {{ page.content }}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        </div>
     {% else %}
 
       {# check to hide post summary on page - hibbittsdesign.org #}
@@ -124,32 +88,16 @@
       {# reversed order of buttons - hibbittsdesign.org #}
       <p class="prev-next">
         {% if not page.isLast %}
-          {# check content display flag - hibbittsdesign.org #}
-          {% if not(grav.uri.param('chromeless')) %}
             <a class="button" href="{{ page.prevSibling.url }}">
               <i class="fa fa-chevron-left"></i>
               {{ 'BLOG.ITEM.PREV_POST'|t }}</a>
-          {% else %}
-            <a class="button" href="{{ page.prevSibling.url }}/chromeless:true">
-              <i class="fa fa-chevron-left"></i>
-              {{ 'BLOG.ITEM.PREV_POST'|t }}
-            </a>
-          {% endif %}
         {% endif %}
 
         {% if not page.isFirst %}
-          {# check content display flag - hibbittsdesign.org #}
-          {% if not(grav.uri.param('chromeless')) %}
             <a class="button" href="{{ page.nextSibling.url }}">
               {{ 'BLOG.ITEM.NEXT_POST'|t }}
               <i class="fa fa-chevron-right"></i>
             </a>
-          {% else %}
-            <a class="button" href="{{ page.nextSibling.url }}/chromeless:true">
-              {{ 'BLOG.ITEM.NEXT_POST'|t }}
-              <i class="fa fa-chevron-right"></i>
-            </a>
-          {% endif %}
         {% endif %}
 
       </p>

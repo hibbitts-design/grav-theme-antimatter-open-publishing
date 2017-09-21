@@ -1,7 +1,7 @@
 {# new twig template file - hibbittsdesign.org #}
-{% if config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is not empty %}
+{% if (config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is not empty) or (theme_config.method_for_git_sync is empty or theme_config.method_for_git_sync == 'other') %}
   {% if not page.header.hide_git_sync_repo_link %}
-    {% if not(theme_config.type_of_git_sync_repo_link == 'edit')or(theme_config.type_of_git_sync_repo_link == 'edit' and theme_config.git_sync_repo_link is not empty) %}
+    {% if (theme_config.type_of_git_sync_repo_link != 'edit' and theme_config.method_for_git_sync == 'other' and theme_config.git_sync_repo_link is not empty) or (theme_config.type_of_git_sync_repo_link == 'edit' and theme_config.git_sync_repo_link is not empty) %}
       {% if theme_config.custom_git_sync_repo_link_icon is empty %}
         {% set git_sync_repo_link = config.plugins['git-sync'].repository %}
         {% if 'github' in git_sync_repo_link %}
@@ -16,9 +16,13 @@
       {% else %}
         {% set git_repo_link_icon = theme_config.custom_git_sync_repo_link_icon %}
       {% endif %}
-      {% if not(theme_config.type_of_git_sync_repo_link == 'edit') %}
-        {% set git_sync_repo = config.plugins['git-sync'].repository %}
-        {% set git_sync_repo_link = (git_sync_repo | replace({'.git': '/'})) %}
+      {% if theme_config.type_of_git_sync_repo_link != 'edit' %}
+        {% if theme_config.method_for_git_sync == 'other' %}
+          {% set git_sync_repo_link = theme_config.git_sync_repo_link %}
+        {% else %}
+          {% set git_sync_repo = config.plugins['git-sync'].repository %}
+          {% set git_sync_repo_link = (git_sync_repo | replace({'.git': '/'})) %}
+        {% endif %}
         {% if theme_config.custom_git_sync_repo_link_text is empty %}
           {% set git_repo_link_text = 'View Content Repository' %}
         {% else %}

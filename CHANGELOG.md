@@ -1,3 +1,9 @@
+# v0.9.8
+## 10/10/2017
+
+1. [](#improved)
+    * Improved global handling of 'chromeless' display mode for embedded pages (thanks Ricardo)
+
 # v0.9.7
 ## 08/30/2017
 
