@@ -1,3 +1,9 @@
+# v1.0.0
+## 09/22/2017
+
+1. [](#improved)
+    * Improved installation process of theme into standard Grav Blog Site skeleton
+
 # v0.9.9
 ## 09/21/2017
 
