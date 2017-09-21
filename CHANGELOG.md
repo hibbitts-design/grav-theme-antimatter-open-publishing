@@ -1,6 +1,8 @@
 # v0.9.8
 ## 10/10/2017
 
+1. [](#new)
+    * Added support for non Git Sync Plugin Git syncing (e.g. upcoming cPanel Git Feature)
 1. [](#improved)
     * Improved global handling of 'chromeless' display mode for embedded pages (thanks Ricardo)
 
