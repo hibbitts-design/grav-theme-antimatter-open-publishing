@@ -1,3 +1,9 @@
+# v1.0.1
+## 09/22/2017
+
+1. [](#bugfix)
+    * Fixed issue of Edit Page in Git links when in 'chromeless' mode
+
 # v1.0.0
 ## 09/22/2017
 
