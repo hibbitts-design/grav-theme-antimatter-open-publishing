@@ -1,0 +1,32 @@
+title: Open Publishing Space Options
+'@extends':
+    type: item
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+
+      fields:
+        blog:
+
+          fields:
+            openpublishingspace1:
+                type: section
+                title: Header Image Caption
+                underline: true
+
+            header.header_image_credit:
+                type: text
+                size: medium
+                label: Caption
+                default: null
+
+            header.header_image_creditlink:
+                type: text
+                size: long
+                label: Caption URL
+                default: null
+                validate:
+                    type: URL
