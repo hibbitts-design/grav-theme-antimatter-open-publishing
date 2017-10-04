@@ -1,3 +1,9 @@
+# v1.0.3
+## 10/04/2017
+
+1. [](#new)
+    * Added support for image captions on blog post image headers
+
 # v1.0.2
 ## 09/23/2017
 
