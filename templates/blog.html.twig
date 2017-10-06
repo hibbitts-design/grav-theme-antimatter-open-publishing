@@ -39,14 +39,18 @@
             {# display posts without 'featured' tag - hibbittsdesign.org #}
             {% for child in collection %}
               {% if "featured" not in child.taxonomy['tag'] %}
-                {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
+                {% if child.header.hidefrompostlist != true %}
+                  {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
+                {% endif %}
               {% endif %}
             {% endfor %}
 
           {% else %}
 
             {% for child in collection %}
-              {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
+              {% if child.header.hidefrompostlist != true %}
+                {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
+              {% endif %}
             {% endfor %}
 
           {% endif %}
