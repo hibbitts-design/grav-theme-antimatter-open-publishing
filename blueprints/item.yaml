@@ -7,26 +7,29 @@ form:
   fields:
     tabs:
       type: tabs
+      active: 1
 
       fields:
         blog:
-
           fields:
-            openpublishingspace1:
-                type: section
-                title: Header Image Caption
-                underline: true
+            header_image:
+              fields:
+                header.header_image_credit:
+                    type: text
+                    size: medium
+                    label: Image Caption
+                    default: null
 
-            header.header_image_credit:
-                type: text
-                size: medium
-                label: Caption
-                default: null
+                header.header_image_creditlink:
+                    type: text
+                    size: long
+                    label: Image Caption URL
+                    default: null
+                    validate:
+                        type: URL
 
-            header.header_image_creditlink:
-                type: text
-                size: long
-                label: Caption URL
-                default: null
-                validate:
-                    type: URL
+                header.header_image_alt_text:
+                    type: text
+                    size: long
+                    label: Image Alternative Text
+                    default: null
