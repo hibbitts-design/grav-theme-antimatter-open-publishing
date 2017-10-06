@@ -109,7 +109,7 @@ git_sync_repo_link: https://github.com/hibbitts-design/grav-skeleton-course-hub/
 ### Blog Post Header Options
 All blog post pages support the following additional options:
 ```
-hidefrompostlist: true  # hide this blog post from blog index
+hide_from_post_list: true  # hide this blog post from blog index
 ```
 
 # Setup
