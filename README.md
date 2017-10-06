@@ -106,6 +106,12 @@ hide_git_sync_repo_link: true  # hide Git Sync link for this page
 git_sync_repo_link: https://github.com/hibbitts-design/grav-skeleton-course-hub/tree/master/pages/01.home   # to override the automatically calculated GitHub URL
 ```
 
+### Blog Post Header Options
+All blog post pages support the following additional options:
+```
+hidefrompostlist: true  # hide this blog post from blog index
+```
+
 # Setup
 
 🚨Before setting up Git Sync, please make sure to remove the `ReadMe.md` file in your Grav site `user` folder (if one exists). This will prevent a possible sync issue when creating a default `ReadMe.md` file in your new Git repository.🚨
