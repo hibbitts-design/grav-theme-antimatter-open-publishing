@@ -1,3 +1,11 @@
+# v1.0.4
+## 10/06/2017
+
+1. [](#bugfix)
+    * Changed page header option name from `hidefrompostlist` to `hide_from_post_list`
+1. [](#improved)
+    * Adjusted position of Alternative Text field in Blueprint
+
 # v1.0.3
 ## 10/06/2017
 
