@@ -33,7 +33,9 @@
 
             {# display posts with 'featured' tag - hibbittsdesign.org #}
             {% for child in taxonomy.findTaxonomy({'tag': "featured"}) %}
-              {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
+              {% if child.header.hidefrompostlist != true %}
+                {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
+              {% endif %}
             {% endfor %}
 
             {# display posts without 'featured' tag - hibbittsdesign.org #}
