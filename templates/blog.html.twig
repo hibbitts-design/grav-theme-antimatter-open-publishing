@@ -33,7 +33,7 @@
 
             {# display posts with 'featured' tag - hibbittsdesign.org #}
             {% for child in taxonomy.findTaxonomy({'tag': "featured"}) %}
-              {% if child.header.hidefrompostlist != true %}
+              {% if child.header.hide_from_post_list != true %}
                 {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
               {% endif %}
             {% endfor %}
@@ -41,7 +41,7 @@
             {# display posts without 'featured' tag - hibbittsdesign.org #}
             {% for child in collection %}
               {% if "featured" not in child.taxonomy['tag'] %}
-                {% if child.header.hidefrompostlist != true %}
+                {% if child.header.hide_from_post_list != true %}
                   {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
                 {% endif %}
               {% endif %}
@@ -50,7 +50,7 @@
           {% else %}
 
             {% for child in collection %}
-              {% if child.header.hidefrompostlist != true %}
+              {% if child.header.hide_from_post_list != true %}
                 {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
               {% endif %}
             {% endfor %}

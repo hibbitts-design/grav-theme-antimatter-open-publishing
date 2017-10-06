@@ -60,6 +60,12 @@ form:
                 min: 0
                 max: 5000
 
+            header.header_image_alt_text:
+                type: text
+                size: medium
+                label: Image Alternative Text
+                default: null
+
             header.header_image_credit:
                 type: text
                 size: medium
@@ -73,12 +79,6 @@ form:
                 default: null
                 validate:
                     type: URL
-
-            header.header_image_alt_text:
-                type: text
-                size: medium
-                label: Image Alternative Text
-                default: null
 
 
             summary:
@@ -124,10 +124,10 @@ form:
 
             openpublishingspace:
                 type: section
-                title: Display in Blog List 
+                title: Display in Blog List
                 underline: true
 
-            header.hidefrompostlist:
+            header.hide_from_post_list:
                 type: toggle
                 label: Display this Item in Blog List
                 help: Determines if this page (i.e. post) will appear in the blog index
