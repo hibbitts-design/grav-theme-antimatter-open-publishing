@@ -1,4 +1,13 @@
 # v1.0.2
+## XX/XX/XXX
+
+1. [](#new)
+    * Added support for image alt text on blog post image headers
+    * Added page header option to hide posts from blog index
+1. [](#improved)
+    * Revised layout for Blog Item Image Captions options in Blueprint
+
+# v1.0.2
 ## 10/04/2017
 
 1. [](#new)
