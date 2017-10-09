@@ -1,6 +1,7 @@
 .image-credit-wrapper {
 overflow: hidden;
 position: relative;
+max-width: 1000px;
 }
 
 .image-credit-wrapper .image-credit {
