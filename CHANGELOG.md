@@ -1,3 +1,9 @@
+# v1.0.6
+## 10/10/2017
+
+1. [](#new)
+    * Added support for blog post title icons (default and per page)
+
 # v1.0.5
 ## 10/09/2017
 

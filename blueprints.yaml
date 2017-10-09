@@ -1,5 +1,5 @@
 name: Antimatter Open Publishing
-version: 1.0.5
+version: 1.0.6
 description: "A customized version of the Antimatter theme with Git Sync and 'chromeless' mode (as shown in screenshot)."
 icon: unlock
 author:
@@ -115,6 +115,21 @@ form:
         description: "URL path to pages folder for 'View/Edit Page in Git Repository' option, but with '/pages' and everything following it removed. For example, 'https://github.com/paulhibbitts/demo-grav-course-hub/tree/master'."
         validate:
             type: URL
+
+    posticon:
+        type: section
+        title: Post Icon
+        underline: true
+
+    post_icon:
+        type: text
+        size: small
+        label: Default Font Awesome Icon for Blog Item
+        description: Short name, e.g. 'newspaper-o'.
+        help: Default Font Awesome icon to override the default blog item title icon
+        default: null
+        validate:
+            type: text
 
     displaypostsummary:
         type: section

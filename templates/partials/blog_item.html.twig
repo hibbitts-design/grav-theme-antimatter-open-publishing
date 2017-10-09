@@ -22,8 +22,19 @@
         <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
       </h4>
     {% else %}
+      {% if page.header.post_icon %}
+        {% set titleicon = page.header.post_icon %}
+      {% else %}
+        {% if theme_config.post_icon %}
+          {% set titleicon = theme_config.post_icon %}
+        {% endif %}
+      {% endif %}
+      {% if titleicon %}
+        <h4 class="p-name"><a href="{{ page.url }}" class="u-url"><i class="fa fa-{{ titleicon }}" aria-hidden="true"></i> {{ page.title }}</a></h4>
+      {% else %}
         <h4 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
-    {% endif %}
+      {% endif %}
+  {% endif %}
 
     {% if page.taxonomy.tag %}
     <span class="tags">

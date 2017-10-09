@@ -122,7 +122,22 @@ form:
               classes: large
               placeholder: ===
 
-            openpublishingspace:
+            openpublishingspace1:
+                type: section
+                title: Title Icon
+                underline: true
+
+            header.post_icon:
+                type: text
+                size: small
+                label: Font Awesome Icon for Blog Item
+                description: Short name, e.g. 'newspaper-o'.
+                help: Optional Font Awesome icon to override the default blog item title icon
+                default: null
+                validate:
+                    type: text
+
+            openpublishingspace2:
                 type: section
                 title: Display in Blog List
                 underline: true
