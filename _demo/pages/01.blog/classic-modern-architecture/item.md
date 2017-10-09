@@ -1,9 +1,12 @@
 ---
-title: Classic Modern Architecture
-date: 17:34 06/27/2017
+title: 'Classic Modern Architecture'
+date: '17:34 06/27/2017'
 taxonomy:
-    category: blog
-    tag: [architecture, photography]
+    category:
+        - blog
+    tag:
+        - photography
+        - architecture
 header_image_credit: 'Unsplash'
 header_image_creditlink: 'https://unsplash.com/'
 header_image_alt_text: 'Modern building'
