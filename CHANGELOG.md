@@ -1,3 +1,9 @@
+# v1.0.5
+## 10/09/2017
+
+1. [](#bugfix)
+    * Fixed incorrect position of image credit in very wide Browser windows
+
 # v1.0.4
 ## 10/06/2017
 
