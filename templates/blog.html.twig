@@ -31,9 +31,9 @@
           {# check if taxonomy and archive parm is false - hibbittsdesign.org #}
           {% if not(grav.uri.param('tag')) and (not(grav.uri.param('archives_month')) and (not(grav.uri.param('page')))) %}
 
-            {# display posts with 'featured' tag - hibbittsdesign.org #}
+            {# display posts with 'featured' tag on current blog page - hibbittsdesign.org #}
             {% for child in taxonomy.findTaxonomy({'tag': "featured"}) %}
-              {% if child.header.hide_from_post_list != true %}
+              {% if (child.header.hide_from_post_list != true) and (child.parent.slug == page.slug) %}
                 {% include 'partials/blog_item.html.twig' with {'blog': page, 'page': child, 'truncate': true} %}
               {% endif %}
             {% endfor %}
