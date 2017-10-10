@@ -2,7 +2,7 @@
 ## XX/XX/XXXX
 
 1. [](#bugfix)
-    * 'Featured' posts are now only displayed on their parent blog page
+    * 'featured' posts are now only displayed on their parent blog page
 
 # v1.0.6
 ## 10/10/2017
