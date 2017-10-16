@@ -72,18 +72,26 @@
           </div>
           {% endif %}
         </section>
-        {% endblock %} {# check content display flag - hibbittsdesign.org #} {% if not (grav.uri.param('chromeless')) and (not theme_config.chromeless.enabled) %} {% block footer %}
-        <footer id="footer">
-          <div class="totop">
-            <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
-          </div>
-          {# check to display git sync link in footer or not yet defined by saving theme settings - hibbittsdesign.org #} {% if theme_config.display_of_git_sync_repo_link == 'footer' %}
-          <p>{% include 'partials/git_sync_repo_link.html.twig' %}</p>
-          {% endif %}
-          <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.
-            <p>
-        </footer>
-        {% endblock %} {% endif %}
+        {% endblock %}
+        {# check content display flag - hibbittsdesign.org #}
+        {% if not (grav.uri.param('chromeless')) and (not theme_config.chromeless.enabled) %}
+          {% block footer %}
+            <footer id="footer">
+            <div class="totop">
+              <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
+            </div>
+            {# check to display git sync link in footer or not yet defined by saving theme settings - hibbittsdesign.org #}
+            {% if theme_config.display_of_git_sync_repo_link == 'footer' %}
+              <p>{% include 'partials/git_sync_repo_link.html.twig' %}</p>
+            {% endif %}
+            {# display footer markdown page - hibbittsdesign.org #}
+            {% set content = pages.find('/footer').content %}
+            {% if content %}
+              <p>{{ content }}</p>
+            {% endif %}
+            </footer>
+          {% endblock %}
+      {% endif %}
 
       </div>
       <div class="sb-slidebar sb-left sb-width-thin">
