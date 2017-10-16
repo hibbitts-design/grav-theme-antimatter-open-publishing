@@ -1,3 +1,9 @@
+# v1.0.8
+## 10/16/2017
+
+1. [](#new)
+    * Added Markdown-based Footer page
+
 # v1.0.7
 ## 10/11/2017
 
