@@ -1,3 +1,9 @@
+# v1.1.0
+## 10/23/2017
+
+1. [](#bugfix)
+    * Restored needed CSS classes to handle 'chromeless' external links 
+
 # v1.0.9
 ## 10/23/2017
 
