@@ -1,5 +1,5 @@
 name: Antimatter Open Publishing
-version: 1.0.8
+version: 1.0.9
 description: "A customized version of the Antimatter theme with Git Sync and 'chromeless' mode (as shown in screenshot)."
 icon: unlock
 author:
@@ -83,15 +83,6 @@ form:
             view: View Git Repository
             edit: View/Edit Page in Git Repository
 
-    method_for_git_sync:
-        type: select
-        size: medium
-        label: Method for Git Sync
-        default: 1
-        options:
-            gitsyncplugin: Git Sync Plugin
-            other: Other (e.g. cPanel Git Feature, etc.)
-
     custom_git_sync_repo_link_icon:
         type: input.text
         size: small
@@ -110,7 +101,7 @@ form:
 
     git_sync_repo_link:
         type: input.url
-        label: Git Repository Tree URL
+        label: Custom Git Repository Tree URL
         help: Enter the URL that leads to the pages folder of your Git Repository.
         description: "URL path to pages folder for 'View/Edit Page in Git Repository' option, but with '/pages' and everything following it removed. For example, 'https://github.com/paulhibbitts/demo-grav-course-hub/tree/master'."
         validate:
