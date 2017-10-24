@@ -1,8 +1,14 @@
+# v1.1.1
+## 10/24/2017
+
+1. [](#improved)
+    * Added improved default handling after initial installation of theme
+
 # v1.1.0
 ## 10/23/2017
 
 1. [](#bugfix)
-    * Restored needed CSS classes to handle 'chromeless' external links 
+    * Restored needed CSS classes to handle 'chromeless' external links
 
 # v1.0.9
 ## 10/23/2017
