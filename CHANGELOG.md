@@ -1,3 +1,9 @@
+# v1.1.2
+## 10/24/2017
+
+1. [](#improved)
+    * Improved footer display when displaying Git Sync link
+
 # v1.1.1
 ## 10/24/2017
 

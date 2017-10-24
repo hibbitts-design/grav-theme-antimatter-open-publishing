@@ -63,3 +63,22 @@ div#breadcrumbs {
   @media only all and (max-width: 47.938em) {
     div#breadcrumbs {
       display: block; } }
+
+#footer .totop {
+    position: absolute;
+    bottom: 11rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+#footer {
+    position: absolute;
+    background: #333;
+    height: 12rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #999;
+    text-align: center;
+}

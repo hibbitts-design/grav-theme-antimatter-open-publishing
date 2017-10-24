@@ -62,11 +62,13 @@
         <div style="margin-bottom: -130px;"></div>
         {% endif %} {% block body %}
         <section id="body" class="{{ class }}">
-          {% block content %} {% endblock %} {# check to display CC License - hibbittsdesign.org #} {# check to display git sync link in page - hibbittsdesign.org #} {% if theme_config.display_of_git_sync_repo_link == 'page' %}
+          {% block content %} {% endblock %} {# check to display CC License - hibbittsdesign.org #} {# check to display git sync link in page - hibbittsdesign.org #}
+          {% if theme_config.display_of_git_sync_repo_link == 'page' %}
           <div class="content-wrapper">
             <p>{% include 'partials/git_sync_repo_link.html.twig' %}</p>
           </div>
-          {% endif %} {% if theme_config.cc_license.enabled %}
+          {% endif %}
+          {% if theme_config.cc_license.enabled %}
           <div class="content-wrapper">
             <p>{% include 'partials/creative_commons_license.html.twig' %}</p>
           </div>
@@ -82,12 +84,12 @@
             </div>
             {# check to display git sync link in footer or not yet defined by saving theme settings - hibbittsdesign.org #}
             {% if theme_config.display_of_git_sync_repo_link == 'footer' %}
-              <p>{% include 'partials/git_sync_repo_link.html.twig' %}</p>
+              <br>{% include 'partials/git_sync_repo_link.html.twig' %}
             {% endif %}
             {# display footer markdown page - hibbittsdesign.org #}
             {% set content = pages.find('/footer').content %}
             {% if content %}
-              <p>{{ content }}</p>
+              {{ content }}
             {% endif %}
             </footer>
           {% endblock %}
