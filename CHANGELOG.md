@@ -1,5 +1,5 @@
 # v1.1.4
-## XX/XX/XXXX
+## 10/26/2017
 
 1. [](#new)
     * Option to display Creative Commons license with icon only
