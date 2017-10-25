@@ -65,7 +65,7 @@
           {% block content %} {% endblock %} {# check to display CC License - hibbittsdesign.org #} {# check to display git sync link in page - hibbittsdesign.org #}
           {% if theme_config.display_of_git_sync_repo_link == 'page' %}
           <div class="content-wrapper">
-            <p>{% include 'partials/git_sync_repo_link.html.twig' %}</p>
+            <p>{% include 'partials/git_sync_repo_link_note.html.twig' %}</p>
           </div>
           {% endif %}
           {% if theme_config.cc_license.enabled %}

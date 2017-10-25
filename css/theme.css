@@ -64,6 +64,10 @@ div#breadcrumbs {
     div#breadcrumbs {
       display: block; } }
 
+.gitrepo-link-note {
+  color: #888888;
+}
+
 #footer .totop {
     position: absolute;
     bottom: 11rem;
@@ -82,3 +86,8 @@ div#breadcrumbs {
     color: #999;
     text-align: center;
 }
+
+#body {
+  background: #fff;
+  padding-top: 8rem;
+  padding-bottom: 18rem; }
