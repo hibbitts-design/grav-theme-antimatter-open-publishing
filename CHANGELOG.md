@@ -14,7 +14,7 @@
 ## 10/24/2017
 
 1. [](#improved)
-    * Added improved default handling after initial installation of theme
+    * Improved default handling after initial installation of theme
 
 # v1.1.0
 ## 10/23/2017
