@@ -1,3 +1,9 @@
+# v1.1.3
+## 10/25/2017
+
+1. [](#improved)
+    * Improved display of Git Sync links within pages
+
 # v1.1.2
 ## 10/24/2017
 
