@@ -1,3 +1,11 @@
+# v1.1.5
+## 11/09/2017
+
+1. [](#new)
+    * Added experimental embed.ly card page template
+    * Added experimental Twitter feed page template
+    * Added blog list page metadata blueprint
+
 # v1.1.4
 ## 10/26/2017
 
