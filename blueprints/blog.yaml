@@ -1,0 +1,24 @@
+title: Blog Metadata
+'@extends':
+    type: blog
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+
+      fields:
+        blog:
+
+          fields:
+
+            metadata:
+                type: section
+                title: Page Metadata
+                underline: true
+
+            header.metadata:
+               type: array
+               label: Metadata Items
+               required: true
