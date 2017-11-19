@@ -1,3 +1,9 @@
+# v1.1.6
+## 11/19/2017
+
+1. [](#improved)
+    * Revised name of sidebar folder from 'sidebar-markdown-widget' to 'sidebar'
+
 # v1.1.5
 ## 11/09/2017
 
