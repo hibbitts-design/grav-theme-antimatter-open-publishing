@@ -13,9 +13,15 @@
 {% endif %}
 {# display sidebar markdown page - hibbittsdesign.org #}
 <div class="sidebar-content">
+  {# check older name for sidebar page - hibbittsdesign.org #}
   {% set content = pages.find('/sidebar-markdown-widget').content %}
   {% if content %}
     {{ content }}
+  {% else %}
+    {% set content = pages.find('/sidebar').content %}
+    {% if content %}
+      {{ content }}
+    {% endif %}
   {% endif %}
 </div>
 {% if config.plugins.relatedpages.enabled and related_pages | length > 0 %}
