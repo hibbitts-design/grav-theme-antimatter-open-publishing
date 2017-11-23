@@ -28,6 +28,12 @@
       <div class="content-wrapper blog-content-list grid pure-g">
         <div id="listing" class="block pure-u-2-3 h-feed">
 
+          {% for module in page.collection('modular_content') %}
+            {% if (module.content|striptags)|trim %}
+              <p>{{ module.content }}</p>
+            {% endif %}
+          {% endfor %}
+
           {# check if taxonomy and archive parm is false - hibbittsdesign.org #}
           {% if not(grav.uri.param('tag')) and (not(grav.uri.param('archives_month')) and (not(grav.uri.param('page')))) %}
 
