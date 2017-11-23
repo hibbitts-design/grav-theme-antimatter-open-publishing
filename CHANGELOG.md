@@ -4,6 +4,9 @@
 1. [](#new)
     * Added example 'Twitter Feed' page in '_demo' pages folder for use with included Page Inject plugin
     * Added example 'Embed.ly Card' page in '_demo' pages folder for use with included Page Inject plugin
+    * Added support for modular page content to be displayed above blog entry list
+    * Added example 'highlight-item' page in '_demo' pages folder for use with included Page Inject plugin
+    * Added example 'reminders' page in '_demo' pages folder for use with included Page Inject plugin
 1. [](#improved)
     * Updated embed.ly card page template and blueprint with alignment option
 1. [](#bugfix)
