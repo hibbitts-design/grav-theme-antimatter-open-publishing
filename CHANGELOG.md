@@ -1,3 +1,14 @@
+# v1.1.7
+## 11/23/2017
+
+1. [](#new)
+    * Added example 'Twitter Feed' page in '_demo' pages folder for use with included Page Inject plugin
+    * Added example 'Embed.ly Card' page in '_demo' pages folder for use with included Page Inject plugin
+1. [](#improved)
+    * Updated embed.ly card page template and blueprint with alignment option
+1. [](#bugfix)
+    * Fixed modular 'default' template
+        *
 # v1.1.6
 ## 11/19/2017
 
