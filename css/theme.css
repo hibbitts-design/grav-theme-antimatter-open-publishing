@@ -95,3 +95,23 @@ div#breadcrumbs {
   background: #fff;
   padding-top: 8rem;
   padding-bottom: 18rem; }
+
+.listbullet ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.listbullet li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.listbullet li:before {
+  content: '\2713';
+  padding-right: 5px;
+}
+
+.modularitem h4 {
+  color: #666666;
+}
