@@ -3,15 +3,11 @@ title: 'Highlight Item'
 published: true
 ---
 
-#### Oct 25th Class Preparations
-_Bring a laptop or mobile device capable of running your chosen open source project!_
+#### Jan 26th Class Preparations
 
-** Required Reading **  
-[A Lean UX Iteration on Dropbox Photos](https://medium.com/bridge-collection/a-lean-ux-iteration-on-dropbox-photos-edfa7b245c27#.5lbv2fjz3)
+** Required Readings **  
+[Persona Empathy Mapping](http://www.cooper.com/journal/2014/05/persona-empathy-mapping)
 
-[Required Reading Quiz](https://canvas.sfu.ca/courses/34140/quizzes/58878?classes=button)
+[Required Reading Quiz](https://canvas.sfu.ca/courses/25492/quizzes/34783?classes=button)
 
-** Slides to be Discussed **  
-[Interaction Design](https://www.swipe.to/0436dh)
-
-Did you attend this class? [Share your one-minute summary](https://canvas.sfu.ca/courses/34140/assignments/240526) before midnight, the day of class.
+Weekly quizzes are due by 10:00am the day of class. After attending this class, [share your one-minute summary](https://canvas.sfu.ca/courses/25492/discussion_topics/440791) before midnight, January 26th.
