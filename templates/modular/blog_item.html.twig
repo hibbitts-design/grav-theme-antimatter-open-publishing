@@ -13,20 +13,31 @@
         {% set header_image_media = page.media.images | first %}
       {% endif %}
 
-      {# support image credit tag - hibbittsdesign.org #}
-      {% if page.header.header_image_credit %}
-        <div class="image-credit-wrapper"><span class="image-credit">
-          {% if page.header.header_image_creditlink %}
-            Image: <a class="newwindow external-link" href="{{ page.header.header_image_creditlink }}">
-            {{ page.header.header_image_credit }}</a></span>
-            <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ page.header.header_image_alt_text }}"/>
-          {% else %}
-            Image: {{ page.header.header_image_credit }}</span>
-            <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ page.header.header_image_alt_text }}"/>
-          {% endif %}
-        </div>
-      {% else %}
-        <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ page.header.header_image_alt_text }}"/>
+      {# support image credit tag with optional image meta file - hibbittsdesign.org #}
+      {% if header_image_media %}
+        {% if page.header.header_image_credit %}
+          {% set image_credit = page.header.header_image_credit %}
+          {% set image_creditlink = page.header.header_image_creditlink %}
+          {% set image_alt_text = page.header.header_image_alt_text %}
+        {% elseif header_image_media.meta.header_image_credit  %}
+          {% set image_credit = header_image_media.meta.header_image_credit %}
+          {% set image_creditlink = header_image_media.meta.header_image_creditlink %}
+          {% set image_alt_text = header_image_media.meta.header_image_alt_text %}
+        {% endif %}
+        {% if image_credit %}
+          <div class="image-credit-wrapper"><span class="image-credit">
+            {% if image_creditlink %}
+              Image: <a class="newwindow external-link" href="{{ image_creditlink }}">
+              {{ image_credit }}</a></span>
+              <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ image_alt_text }}"/>
+            {% else %}
+              Image: {{ image_credit }}</span>
+              <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ image_alt_text }}"/>
+            {% endif %}
+          </div>
+        {% else %}
+          <img src="{{ header_image_media.cropZoom(header_image_width, header_image_height).url }}" alt="{{ image_alt_text }}"/>
+        {% endif %}
       {% endif %}
 
   {% endif %}
