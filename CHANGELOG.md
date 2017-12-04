@@ -1,3 +1,9 @@
+# v1.1.8
+## 12/04/2017
+
+1. [](#new)
+    * Added scripts template to hold global JavaScript code
+
 # v1.1.7
 ## 11/23/2017
 
