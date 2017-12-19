@@ -5,7 +5,7 @@
     * Added MediaPicker functionality for (blog) item header images
 1. [](#improved)
     * Updated embed.ly card template
-    * Updated course hub demo pages in theme '_demo' folder
+    * Updated open publishing space demo pages in theme '_demo' folder
 1. [](#bugfix)
     * Renamed 'blog_item' modular template to 'item'
     * Renamed 'reminders' modular template to 'alert'
