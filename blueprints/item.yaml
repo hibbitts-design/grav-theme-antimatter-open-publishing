@@ -30,7 +30,7 @@ form:
                 0: PLUGIN_ADMIN.DISABLED
 
             header.header_image_file:
-              type: text
+              type: mediapicker
               toggleable: true
               label: Image File
               help: image filename that exists in the page folder. If not provided, will use the first image found.
