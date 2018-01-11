@@ -1,3 +1,9 @@
+# v1.2.1
+## 01/11/2018
+
+1. [](#bugfix)
+    * Removed display of 'Edit in Git' link with use of 'summaryonly' URL flag
+
 # v1.2.0
 ## 01/11/2018
 
