@@ -29,17 +29,21 @@
           {% set titleicon = theme_config.post_icon %}
         {% endif %}
       {% endif %}
-      {% if titleicon %}
-        <h4 class="p-name"><a href="{{ page.url }}" class="u-url"><i class="fa fa-{{ titleicon }}" aria-hidden="true"></i> {{ page.title }}</a></h4>
-      {% else %}
-        <h4 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
+      {% if not (grav.uri.param('hidepagetitle')) %}
+        {% if titleicon %}
+          <h4 class="p-name"><a href="{{ page.url }}" class="u-url"><i class="fa fa-{{ titleicon }}" aria-hidden="true"></i> {{ page.title }}</a></h4>
+        {% else %}
+          <h4 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
+        {% endif %}
       {% endif %}
   {% endif %}
 
     {% if page.taxonomy.tag %}
     <span class="tags">
         {% for tag in page.taxonomy.tag %}
-        <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+        {% if not (grav.uri.param('chromeless')) %}
+          <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+        {% endif %}
         {% endfor %}
     </span>
     {% endif %}
@@ -112,18 +116,28 @@
         {% set content = page.content %}
       {% endif %}
 
-      <div class="e-content">
-        {{ content }}
-      </div>
+      {% if not (grav.uri.param('summaryonly')) %}
+        <div class="e-content">
+          {{ content }}
+        </div>
 
-      {% if config.plugins.comments.enabled %}
-        {% include 'partials/comments.html.twig' %}
+        {% if config.plugins.comments.enabled %}
+          {% include 'partials/comments.html.twig' %}
+        {% endif %}
+
+        {% set show_prev_next = true %}
+
+      {% else %}
+        <div class="e-content">
+          {{ page.summary }}
+        </div>
+        <p><a class="topwindow" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
       {% endif %}
 
-      {% set show_prev_next = true %}
     {% endif %}
 
-    {% if show_prev_next %}
+    {# added check for content display flag - hibbittsdesign.org #}
+    {% if show_prev_next and not (grav.uri.param('chromeless')) %}
 
       {# reversed order of buttons - hibbittsdesign.org #}
       <p class="prev-next">
