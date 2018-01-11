@@ -63,7 +63,7 @@
         {% endif %} {% block body %}
         <section id="body" class="{{ class }}">
           {% block content %} {% endblock %} {# check to display CC License - hibbittsdesign.org #} {# check to display git sync link in page - hibbittsdesign.org #}
-          {% if theme_config.display_of_git_sync_repo_link == 'page' %}
+          {% if theme_config.display_of_git_sync_repo_link == 'page' and not (grav.uri.param('summaryonly')) %}
           <div class="content-wrapper">
             <p>{% include 'partials/git_sync_repo_link_note.html.twig' %}</p>
           </div>
@@ -117,5 +117,5 @@
 
     {# added global scripts - hibbittsdesign.org #}
     {% include 'partials/scripts.html.twig' %}
-    
+
 </html>
