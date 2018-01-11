@@ -2,7 +2,9 @@ $(document).ready(function(){
 
    $("a.newwindow").attr("target","_blank");
 
-    $('#body').on('click', 'a:not(.external-link)', function(e){
+   $("a.topwindow").attr("target","_top");
+
+    $('#body').on('click', 'a:not(.external-link):not([href^="#"])', function(e){
 
         e.preventDefault();
         var url  = window.location.href;
