@@ -1,7 +1,7 @@
 {% embed 'partials/base.html.twig' %}
 
   {% block content %}
-    {% if config.plugins.breadcrumbs.enabled %}
+    {% if config.plugins.breadcrumbs.enabled and not (grav.uri.param('summaryonly')) %}
       {% include 'partials/breadcrumbs.html.twig' %}
     {% endif %}
 
