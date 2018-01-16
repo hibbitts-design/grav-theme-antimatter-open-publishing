@@ -22,3 +22,20 @@ form:
                type: array
                label: Metadata Items
                required: true
+
+            continuelink:
+                type: section
+                title: "'Continue reading...' Links"
+                underline: true
+
+            header.continue_link_as_button:
+                type: toggle
+                label: Display 'Continue reading...' Links as Buttons
+                help: Determines if 'Continue Reading...' links are displayed as buttons
+                default: 0
+                highlight: 1
+                options:
+                    1:  Yes
+                    0:  No
+                validate:
+                    type: bool

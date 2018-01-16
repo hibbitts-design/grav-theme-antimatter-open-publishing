@@ -100,12 +100,20 @@
     {% elseif truncate and page.summary != page.content %}
       <div class="p-summary e-content">
           {{ page.summary }}
-          <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+          {% if page.parent.header.continue_link_as_button %}
+            <p><a class="button" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+          {% else %}
+            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+          {% endif %}
       </div>
       {% elseif truncate %}
         <div class="p-summary e-content">
             {{ page.content }}
-            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+            {% if page.parent.header.continue_link_as_button %}
+              <p><a class="button" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+            {% else %}
+              <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+            {% endif %}
         </div>
     {% else %}
 
@@ -131,7 +139,13 @@
         <div class="e-content">
           {{ page.summary }}
         </div>
-        <p><a class="topwindow" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+
+        {% if page.parent.header.continue_link_as_button %}
+          <p><a class="button" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        {% else %}
+          <p><a class="topwindow" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+        {% endif %}
+
       {% endif %}
 
     {% endif %}
