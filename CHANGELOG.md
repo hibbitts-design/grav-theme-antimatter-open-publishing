@@ -1,3 +1,9 @@
+# v1.2.3
+## 01/16/2018
+
+1. [](#improved)
+    * Do not display breadcrumbs (when enabled) if the 'summaryonly' URL flag is present
+
 # v1.2.2
 ## 01/16/2018
 
