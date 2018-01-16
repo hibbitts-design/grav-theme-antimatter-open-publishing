@@ -1,3 +1,9 @@
+# v1.2.2
+## 01/16/2018
+
+1. [](#bugfix)
+    * Added experimental support for Blog page list option to display 'Continue readings...' links as buttons in Blog page summaries
+
 # v1.2.1
 ## 01/11/2018
 
