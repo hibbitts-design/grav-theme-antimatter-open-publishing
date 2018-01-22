@@ -28,6 +28,9 @@
         {% if theme_config.post_icon %}
           {% set titleicon = theme_config.post_icon %}
         {% endif %}
+        {% if page.parent.header.post_icon %}
+          {% set titleicon = page.parent.header.post_icon %}
+        {% endif %}
       {% endif %}
       {% if not (grav.uri.param('hidepagetitle')) %}
         {% if titleicon %}
@@ -118,7 +121,7 @@
     {% else %}
 
       {# check to hide post summary on page - hibbittsdesign.org #}
-      {% if theme_config.displaypostsummary.enabled %}
+      {% if page.parent.header.display_post_summary.enabled %}
         {% set content = page.content | slice(page.summary | length) %}
       {% else %}
         {% set content = page.content %}
@@ -126,7 +129,11 @@
 
       {% if not (grav.uri.param('summaryonly')) %}
         <div class="e-content">
-          {{ content }}
+          {% if content is not empty  %}
+              {{ content }}
+          {% else %}
+              {{ page.summary }}
+          {% endif %}
         </div>
 
         {% if config.plugins.comments.enabled %}

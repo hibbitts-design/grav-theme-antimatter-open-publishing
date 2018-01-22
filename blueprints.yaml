@@ -120,37 +120,6 @@ form:
         validate:
             type: URL
 
-    posticon:
-        type: section
-        title: Post Icon
-        underline: true
-
-    post_icon:
-        type: text
-        size: small
-        label: Default Font Awesome Icon for Blog Item
-        description: Short name, e.g. 'newspaper-o'.
-        help: Default Font Awesome icon to override the default blog item title icon
-        default: null
-        validate:
-            type: text
-
-    displaypostsummary:
-        type: section
-        title: Blog Post Summaries
-        underline: true
-
-    displaypostsummary.enabled:
-        type:                      toggle
-        label:                     Hide Summaries on Blog Post Pages
-        highlight:                 1
-        default:                   0
-        options:
-            1:                     Yes
-            0:                     No
-        validate:
-            type:                  bool
-
     displaycclicense:
         type: section
         title: Creative Commons License

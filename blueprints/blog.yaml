@@ -13,20 +13,31 @@ form:
 
           fields:
 
-            metadata:
+            appearance:
                 type: section
-                title: Page Metadata
+                title: Appearance
                 underline: true
 
-            header.metadata:
-               type: array
-               label: Metadata Items
-               required: true
+            header.display_post_summary.enabled:
+                type:                      toggle
+                label:                     Hide Summaries on Blog Post Pages
+                highlight:                 1
+                default:                   0
+                options:
+                    1:                     Yes
+                    0:                     No
+                validate:
+                    type:                  bool
 
-            continuelink:
-                type: section
-                title: "'Continue reading...' Links"
-                underline: true
+            header.post_icon:
+                type:                      text
+                size:                      small
+                label:                     Default Blog Item Font Awesome Icon
+                default:                   'calendar-o'
+                description:               Short name, e.g. 'calendar'.
+                help:                      Determines the default Font Awesome icon used for the blog posts.
+                validate:
+                    type:                  text
 
             header.continue_link_as_button:
                 type: toggle
@@ -39,3 +50,13 @@ form:
                     0:  No
                 validate:
                     type: bool
+
+            metadata:
+                type: section
+                title: Page Metadata
+                underline: true
+
+            header.metadata:
+               type: array
+               label: Metadata Items
+               required: true
