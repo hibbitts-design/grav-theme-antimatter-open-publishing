@@ -46,9 +46,9 @@
 {% else %}
   {% if config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is empty %}
     {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/git-sync' %}
-    <a class="newwindow external-link" href="{{ admin_panel_appearance_url }}" title="Setup Git Sync Plugin">
+    <a class="newwindow external-link" href="{{ admin_panel_appearance_url }}" title="Setup Git Sync">
     <i class="fa fa-cog" aria-hidden="true"></i>
-    Setup Git Sync Plugin</a>
+    Setup Git Sync</a>
   {% else %}
     {% set git_sync_repo = config.plugins['git-sync'].repository %}
     {% set git_sync_repo_link = (git_sync_repo | replace({'.git': '/'})) %}
