@@ -1,3 +1,9 @@
+# v1.2.4
+## 01/21/2018
+
+1. [](#improved)
+    * Relocated Blog summary only display and custom icon from Theme options to Blog List options
+
 # v1.2.3
 ## 01/16/2018
 
