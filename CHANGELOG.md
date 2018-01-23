@@ -1,3 +1,9 @@
+# v1.2.5
+## 01/23/2018
+
+1. [](#new)
+    * Added default content for pages created using Admin Panel button bar
+
 # v1.2.4
 ## 01/21/2018
 
