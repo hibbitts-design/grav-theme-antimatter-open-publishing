@@ -10,6 +10,16 @@ form:
       active: 1
 
       fields:
+        content:
+          type: tab
+
+          fields:
+
+            content:
+                markdown: true
+                default: "Your page content goes here."
+
+      fields:
         options:
           type: tab
 
