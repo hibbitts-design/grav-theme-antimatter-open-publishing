@@ -1,3 +1,9 @@
+# v1.2.7
+## XX/XX/XXXX
+
+1. [](#bugfix)
+    * Corrected display of default modular template
+
 # v1.2.6
 ## 02/21/2018
 
