@@ -1,6 +1,8 @@
 # v1.2.7
-## XX/XX/XXXX
+## 02/23/2018
 
+1. [](#improved)
+    * Updated names of example modular pages to all lowercase
 1. [](#bugfix)
     * Corrected display of default modular template
 
