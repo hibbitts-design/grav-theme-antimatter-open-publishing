@@ -1,3 +1,9 @@
+# v1.2.8
+## 03/01/2018
+
+1. [](#improved)
+    * Restored support for custom Git Sync link icon
+
 # v1.2.7
 ## 02/23/2018
 
