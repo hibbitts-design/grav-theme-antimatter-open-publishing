@@ -65,6 +65,9 @@
 	    {% set git_repo_link_icon = "git" %}
       {% set git_repo_edit_link_url = (git_sync_repo|replace({'.git':'/'})) ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
 	  {% endif %}
+    {% if theme_config.custom_git_sync_repo_link_icon is not empty %}
+        {% set git_repo_link_icon = theme_config.custom_git_sync_repo_link_icon %}
+    {% endif %}
     {% if theme_config.type_of_git_sync_repo_link == 'view'  or theme_config.type_of_git_sync_repo_link is empty %}
       {% if theme_config.custom_git_sync_repo_link_text is empty %}
         {% set git_repo_link_text = 'View Content Repository' %}
