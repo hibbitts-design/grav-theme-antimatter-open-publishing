@@ -246,7 +246,7 @@
     * Added option to choose window target for custom menu items
     * Added note about 'Page' Git Sync link location for chromeless display
 1. [](#bugfix)
-    * Removed unexpected multi-page duplication of 'Featured' posts
+    * Removed unexpected multi-page duplication of 'featured' posts
 
 # v0.9.4
 ## 08/18/2017
