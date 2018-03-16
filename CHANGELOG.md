@@ -5,6 +5,7 @@
     * Updated theme css defaults
     * Changed theme author information to Hibbitts Design
 
+# v1.2.9
 ## 03/11/2018
 
 1. [](#improved)
