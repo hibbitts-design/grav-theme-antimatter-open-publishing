@@ -1,6 +1,13 @@
-# v1.2.9
+# v1.3.0
+## 03/15/2018
+
+1. [](#improved)
+    * Updated theme css defaults
+    * Changed theme author information to Hibbitts Design
+
 ## 03/11/2018
 
+1. [](#improved)
     * Updated ReadMe file
 
 # v1.2.8
