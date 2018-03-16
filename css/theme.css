@@ -115,3 +115,11 @@ div#breadcrumbs {
 .modularitem h4 {
   color: #666666;
 }
+
+.blog-header.blog-header-image h2 {
+  text-align: center;
+}
+
+.blog-header.blog-header-image h1, .blog-header.blog-header-image h2, .blog-header.blog-header-image h3 {
+    color: #FFFFFF;
+}
