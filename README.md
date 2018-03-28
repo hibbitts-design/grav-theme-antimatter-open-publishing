@@ -31,12 +31,12 @@ Manually updating Antimatter Open Publishing is pretty simple. Here is what you 
 * 'Chromeless' page display (i.e. only display page content) for embedding pages in a 3rd party system
 * Markdown-based sidebar widget
 * Featured posts (i.e. sticky posts)
-* Custom menubar items
 * Option to toggle page summaries (i.e. summaries are not displayed with page content)
+* Custom menubar items
 * Easy-to-use interface to create custom menubar items
 * Option to hide Home page link in menubar
 * Creative Commons license display
-* Various Web accessibility enhancements (i.e. hidden H1 page titles)
+* Web accessibility enhancements (i.e. hidden H1 page titles)
 
 ## Standard Antimatter Features
 
