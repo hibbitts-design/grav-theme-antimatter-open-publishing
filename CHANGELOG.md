@@ -1,3 +1,9 @@
+# v1.3.1
+## 03/28/2018
+
+1. [](#bugfix)
+    * Added proper handling of Featherlight Plugin
+
 # v1.3.0
 ## 03/15/2018
 
