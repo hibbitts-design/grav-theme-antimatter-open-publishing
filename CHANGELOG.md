@@ -1,3 +1,13 @@
+# v1.3.2
+## 04/29/2018
+
+1. [](#new)
+    * Added experimental H5P Shortcode support (in the formats of [h5p id=ID] and [h5p url=URL])
+    * Added experimental Embed.ly Card Shortcode support (in the format of [embedly url=URL])
+    * Added experimental Swipe Shortcode support (in the format of [swipe id=ID])
+    * Added H5P content page template and blueprint
+    * Added Swipe deck page template content page template and blueprint
+
 # v1.3.1
 ## 03/28/2018
 
