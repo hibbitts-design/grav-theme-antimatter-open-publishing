@@ -1,3 +1,13 @@
+# v1.3.3
+## 06/12/2018
+
+1. [](#new)
+    * Added option to hide or show Sidebar on Blog pages
+    * Added example Modular collection page
+    * Added full width page template for Modular pages
+1. [](#improved)
+    * Updated demo pages in theme '_demo' folder
+
 # v1.3.2
 ## 04/29/2018
 
