@@ -1,3 +1,9 @@
+# v1.3.4
+## 08/01/2018
+
+1. [](#improved)
+    * Changed theme title from "Antimatter Open Publishing" to "Antimatter Open Blog"
+
 # v1.3.3
 ## 06/12/2018
 
