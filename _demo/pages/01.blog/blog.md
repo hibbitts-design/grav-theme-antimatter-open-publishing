@@ -28,5 +28,5 @@ feed:
 pagination: true
 ---
 
-# My Open Publishing Space
-## Publish, share and collaboratively edit Markdown-based content
+# My Antimatter **Open** Blog
+## Publish, Share, and Collaborate
