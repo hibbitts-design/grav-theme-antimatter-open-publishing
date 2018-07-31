@@ -1,6 +1,6 @@
-name: Antimatter Open Publishing
-version: 1.3.3
-description: "A customized version of the Antimatter theme with Git Sync and 'chromeless' mode (as shown in screenshot)."
+name: Antimatter Open Blog
+version: 1.3.4
+description: "A customized version of the Antimatter theme, with Git Sync and 'chromeless' mode (as shown in screenshot)."
 icon: unlock
 author:
  name: Hibbitts Design
