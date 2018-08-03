@@ -1,9 +1,14 @@
+# v1.3.6
+## 08/02/2018
+
+1. [](#improved)
+    * Updated theme screenshots and blueprint
+
 # v1.3.5
 ## 08/02/2018
 
 1. [](#improved)
     * Updated demo pages in theme '_demo' folder
-    * Updated theme screenshots and blueprint
 
 # v1.3.4
 ## 08/01/2018
