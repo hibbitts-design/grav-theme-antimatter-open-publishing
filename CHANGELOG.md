@@ -1,3 +1,9 @@
+# v1.3.7
+## 08/06/2018
+
+1. [](#improved)
+    * Updated theme screenshots and blueprint
+
 # v1.3.6
 ## 08/02/2018
 
@@ -14,7 +20,7 @@
 ## 08/01/2018
 
 1. [](#improved)
-    * Changed theme title from "Antimatter Open Publishing" to "Antimatter Open Blog"
+    * Updated demo pages in theme '_demo' folder
 
 # v1.3.3
 ## 06/12/2018
@@ -23,8 +29,6 @@
     * Added option to hide or show Sidebar on Blog pages
     * Added example Modular collection page
     * Added full width page template for Modular pages
-1. [](#improved)
-    * Updated demo pages in theme '_demo' folder
 
 # v1.3.2
 ## 04/29/2018
