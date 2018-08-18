@@ -1,3 +1,9 @@
+# v1.3.8
+## 08/18/2018
+
+1. [](#improved)
+    * Escaped `query` in Twig templates for XSS protection
+
 # v1.3.7
 ## 08/06/2018
 
