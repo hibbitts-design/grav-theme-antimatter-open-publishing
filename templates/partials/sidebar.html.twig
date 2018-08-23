@@ -1,3 +1,7 @@
+
+{% set sidebar_page = pages.find('/sidebar') %}
+{% set sidebar_page_content =  sidebar_page.content %}
+
 {% set feed_url = blog.url == '/' or blog.url == base_url_relative
   ? (base_url_relative ~ '/' ~ blog.slug)
   : blog.url %}
@@ -11,19 +15,16 @@
     {% include 'partials/simplesearch_searchbox.html.twig' %}
   </div>
 {% endif %}
+
 {# display sidebar markdown page - hibbittsdesign.org #}
-<div class="sidebar-content">
-  {# check older name for sidebar page - hibbittsdesign.org #}
-  {% set content = pages.find('/sidebar-markdown-widget').content %}
-  {% if content %}
-    {{ content }}
-  {% else %}
-    {% set content = pages.find('/sidebar').content %}
-    {% if content %}
-      {{ content }}
-    {% endif %}
+{% if sidebar_page.header.position == 'top' or sidebar_page.header.position is empty %}
+  {% if sidebar_page_content is not empty %}
+    <div class="sidebar-content">
+      {{ sidebar_page_content }}
+    </div>
   {% endif %}
-</div>
+{% endif %}
+
 {% if config.plugins.relatedpages.enabled and related_pages | length > 0 %}
   <h4>{{ 'SIDEBAR.RELATED_POSTS.HEADLINE'|t }}</h4>
   {% include 'partials/relatedpages.html.twig' %}
@@ -48,6 +49,16 @@
     {% include 'partials/archives.html.twig' with {'base_url': new_base_url} %}
   </div>
 {% endif %}
+
+{# display sidebar markdown page - hibbittsdesign.org #}
+{% if sidebar_page.header.position == 'bottom' %}
+  {% if sidebar_page_content is not empty %}
+    <div class="sidebar-content">
+      {{ sidebar_page_content }}
+    </div>
+  {% endif %}
+{% endif %}
+
 {% if config.plugins.feed.enabled %}
   <div class="sidebar-content syndicate">
     <h4>{{ 'SIDEBAR.SYNDICATE.HEADLINE'|t }}</h4>
