@@ -1,3 +1,11 @@
+# v1.4.0
+## 08/23/2018
+
+1. [](#improved)
+    * Added option for Sidebar Markdown area location to Sidebar page frontmatter
+1. [](#improved)
+    * Updated demo pages in theme '_demo' folder
+
 # v1.3.9
 ## 08/21/2018
 
