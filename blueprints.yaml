@@ -1,5 +1,5 @@
 name: Antimatter Open Publishing
-version: 1.4.0
+version: 1.4.1
 description: "A custom version of the Antimatter theme for open publishing. Includes Git Sync and 'chromeless'  content embedding."
 icon: unlock
 author:
@@ -19,6 +19,7 @@ dependencies:
   - archives
   - breadcrumbs
   - email
+  - error
   - external_links
   - feed
   - form
@@ -29,6 +30,7 @@ dependencies:
   - oerschema
   - page-inject
   - pagination
+  - problems
   - relatedpages
   - simplesearch
   - taxonomylist
