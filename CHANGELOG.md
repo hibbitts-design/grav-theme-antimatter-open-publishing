@@ -1,3 +1,9 @@
+# v1.4.1
+## 08/23/2018
+
+1. [](#bugfix)
+    * Restored missing Error and Problems Plugin dependencies
+
 # v1.4.0
 ## 08/23/2018
 
